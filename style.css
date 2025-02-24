@@ -1,0 +1,55 @@
+
+body {
+    background-color: #222;
+    color: #777;
+    font-family: "Nunito", serif;
+}
+.container {
+    max-width: 500px;
+    min-height: 350px;
+    margin: 50px auto;
+    padding: 30px 100px;
+    border-radius: 10px;
+    border: 2px solid white;
+
+    #input-field {
+        margin: 5px 20px 20px 5px;
+        #task-input {
+            width: 400px;
+            height: 30px;
+            padding: 1px 5px;
+        }
+        #add-task-btn {
+            position: relative;
+            right: 47px;
+            top: 1px;
+            height: 25px;
+            i {
+                font-size: 1.05rem;
+            }
+        }
+    }
+    .task-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .task {
+            display: flex;
+            gap: 10px;
+            border-bottom: 1px solid #666;
+
+            .checkbox {
+                width: 20px;
+                height: 20px;
+                align-self: center;
+            }
+
+            span {
+                display: inline-block;
+                margin-left: auto;
+            }
+        }
+    }
+}
+
